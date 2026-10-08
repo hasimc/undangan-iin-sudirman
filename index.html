@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan Iin Resti Fauziah & Sudirman</title>
+
+  <!-- Open Graph Meta Tags (Untuk Pratinjau WhatsApp di GitHub Pages) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Undangan Pernikahan Iin Resti Fauziah & Sudirman">
+  <meta property="og:description" content="Sabtu, 17 Oktober 2026 — Tanpa mengurangi rasa hormat, kami mengundang Anda untuk hadir di hari bahagia kami.">
+  <meta property="og:image" content="https://username.github.io/nama-repo/assets/foto/foto-pasangan.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="600">
+
+  <!-- Google Fonts High-End -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* === RESET & COLOR VARIABLES === */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg-dark: #080a0d;
+      --gold-main: #e2c068;
+      --gold-gradient: linear-gradient(135deg, #d4af37 0%, #fef1c9 50%, #b38728 100%);
+      --glass-bg: rgba(18, 22, 30, 0.78);
+      --glass-border: rgba(226, 192, 104, 0.3);
+      --text-main: #f0f2f5;
+      --text-muted: #9aa0ac;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+    }
+
+    body { overflow-x: hidden; }
+    body.locked { overflow: hidden; }
+
+    /* === TYPOGRAPHY === */
+    .font-serif { font-family: 'Cormorant Garamond', serif; }
+    .font-script { font-family: 'Great Vibes', cursive; }
+
+    /* === LAYOUT CONTAINERS === */
+    .section-full {
+      min-height: 100vh;
+      width: 100%;
+      padding: 70px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .section-full::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, rgba(8, 10, 13, 0.6) 0%, rgba(8, 10, 13, 0.92) 100%);
+      z-index: 1;
+    }
+
+    .content-relative {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 650px;
+    }
+
+    /* === SVG ICONS === */
+    .icon-svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    /* === BUTTONS === */
+    .btn-gold {
+      background: var(--gold-gradient);
+      color: #080a0d;
+      border: none;
+      padding: 14px 34px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      box-shadow: 0 8px 25px rgba(212, 175, 55, 0.35);
+      transition: all 0.3s ease;
+    }
+
+    .btn-gold:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(212, 175, 55, 0.55);
+    }
+
+    /* ==========================================
+       SECTION 1: HERO / COVER (FONT LEBIH BESAR)
+       ========================================== */
+    .hero-content {
+      text-align: center;
+      padding: 40px 10px;
+    }
+
+    .hero-tag {
+      font-size: 0.85rem;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: var(--gold-main);
+      margin-bottom: 15px;
+    }
+
+    .hero-title-group {
+      margin: 20px 0 30px 0;
+      line-height: 1.25;
+    }
+
+    .hero-name-top, .hero-name-bottom {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5rem; /* Diperbesar agar lebih megah */
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: block;
+    }
+
+    .hero-ampersand {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      color: var(--gold-main);
+      margin: 5px 0;
+      display: block;
+    }
+
+    .guest-ribbon {
+      background: rgba(255, 255, 255, 0.04);
+      border-top: 1px solid var(--glass-border);
+      border-bottom: 1px solid var(--glass-border);
+      padding: 18px 20px;
+      margin: 30px 0;
+      backdrop-filter: blur(10px);
+    }
+
+    .guest-ribbon p {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      letter-spacing: 1px;
+    }
+
+    .guest-ribbon h3 {
+      font-size: 1.4rem;
+      color: #ffffff;
+      margin-top: 5px;
+    }
+
+    /* ==========================================
+       SECTION 2: PEMBUKA & HERO FOTO PASANGAN
+       ========================================== */
+    .welcome-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 28px;
+      padding: 40px 24px;
+      backdrop-filter: blur(16px);
+      text-align: center;
+    }
+
+    .hero-couple-frame {
+      width: 250px;
+      height: 360px;
+      border-radius: 125px 125px 20px 20px;
+      margin: 0 auto 25px;
+      position: relative;
+      padding: 6px;
+      background: var(--gold-gradient);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7), 0 0 25px rgba(226, 192, 104, 0.3);
+    }
+
+    .hero-couple-frame::after {
+      content: '';
+      position: absolute;
+      inset: -6px;
+      border-radius: 131px 131px 26px 26px;
+      border: 1px dashed var(--gold-main);
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    .hero-couple-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 119px 119px 14px 14px;
+      display: block;
+    }
+
+    .welcome-text {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      color: var(--text-main);
+      margin-bottom: 25px;
+    }
+
+    .quote-subbox {
+      border-top: 1px solid var(--glass-border);
+      padding-top: 20px;
+      margin-top: 20px;
+    }
+
+    .quote-subbox p {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      font-style: italic;
+      color: #e0e4ec;
+    }
+
+    .quote-subbox span {
+      display: block;
+      margin-top: 10px;
+      color: var(--gold-main);
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+
+    /* ==========================================
+       SECTION 3: MEMPELAI
+       ========================================== */
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 3.2rem;
+      color: var(--gold-main);
+    }
+
+    .couple-container-large {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .couple-card-large {
+      text-align: center;
+      width: 100%;
+      max-width: 320px;
+    }
+
+    .arch-frame-large {
+      width: 220px;
+      height: 320px;
+      border-radius: 110px 110px 18px 18px;
+      margin: 0 auto 15px;
+      position: relative;
+      padding: 6px;
+      background: var(--gold-gradient);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7), 0 0 20px rgba(226, 192, 104, 0.25);
+    }
+
+    .arch-frame-large::after {
+      content: '';
+      position: absolute;
+      inset: -6px;
+      border-radius: 116px 116px 24px 24px;
+      border: 1px dashed var(--gold-main);
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    .arch-frame-large img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 104px 104px 12px 12px;
+      display: block;
+    }
+
+    .couple-card-large h3 {
+      font-size: 1.8rem;
+      color: var(--gold-main);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .couple-card-large p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .couple-symbol-center {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.8rem;
+      color: var(--gold-main);
+      margin: 5px 0;
+      text-align: center;
+    }
+
+    /* ==========================================
+       SECTION 4: TURUT MENGUNDANG (8 BARIS)
+       ========================================== */
+    .family-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 24px;
+      padding: 35px 25px;
+      backdrop-filter: blur(16px);
+      text-align: center;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .family-list {
+      list-style: none;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .family-list li {
+      font-size: 0.88rem;
+      color: var(--text-main);
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    /* ==========================================
+       SECTION 5: AGENDA ACARA & TIMELINE
+       ========================================== */
+    .timeline-container {
+      position: relative;
+      padding-left: 20px;
+      border-left: 2px solid var(--glass-border);
+      margin: 30px 0;
+      text-align: left;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 30px;
+      padding-left: 15px;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -27px;
+      top: 5px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--gold-main);
+      box-shadow: 0 0 10px var(--gold-main);
+    }
+
+    .timeline-item h4 {
+      font-size: 1.2rem;
+      color: var(--gold-main);
+    }
+
+    .timeline-item .time-tag {
+      font-size: 0.85rem;
+      color: #ffffff;
+      font-weight: 600;
+      margin: 4px 0;
+    }
+
+    .timeline-item p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .countdown-bar {
+      display: flex;
+      justify-content: space-around;
+      background: rgba(0,0,0,0.4);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      padding: 15px 10px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .cd-box span {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gold-main);
+      display: block;
+    }
+
+    .cd-box p {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================
+       SECTION 6: RSVP FORM
+       ========================================== */
+    .form-card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: 24px;
+      padding: 30px 20px;
+      backdrop-filter: blur(16px);
+      text-align: left;
+    }
+
+    .rsvp-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem;
+      color: var(--gold-main);
+      text-align: center;
+      margin-bottom: 5px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--gold-main);
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--glass-border);
+      background: rgba(8, 10, 13, 0.8);
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 0.9rem;
+    }
+
+    /* === MAIN VISIBILITY & FLOATING CONTROLS === */
+    #main-content { display: none; }
+    #main-content.active { display: block; }
+
+    .floating-container {
+      position: fixed;
+      bottom: 25px;
+      right: 20px;
+      z-index: 999;
+      display: none;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .floating-container.active { display: flex; }
+
+    .floating-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(18, 22, 30, 0.9);
+      border: 1.5px solid var(--gold-main);
+      color: var(--gold-main);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+      transition: all 0.3s ease;
+    }
+
+    .floating-btn.active {
+      background: var(--gold-main);
+      color: #080a0d;
+    }
+
+    /* === ANIMATIONS === */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="locked">
+
+  <!-- FLOATING CONTROLS -->
+  <div class="floating-container">
+    <button id="btn-audio" class="floating-btn" title="Musik">
+      <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+    </button>
+    <button id="btn-autoscroll" class="floating-btn" title="Auto Scroll">
+      <svg id="autoscroll-icon" class="icon-svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    </button>
+  </div>
+
+  <audio id="bg-music" loop preload="auto">
+    <source src="assets/musik/musik.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- COVER SECTION -->
+  <section id="cover" class="section-full" style="background-image: url('assets/latar/latar-cover.jpg');">
+    <div class="content-relative hero-content">
+      <p class="hero-tag">The Wedding Of</p>
+      
+      <!-- Susunan Nama Vertikal dengan Font Lebih Besar -->
+      <div class="hero-title-group">
+        <span class="hero-name-top">Iin Resti Fauziah</span>
+        <span class="hero-ampersand">&</span>
+        <span class="hero-name-bottom">Sudirman</span>
+      </div>
+
+      <p style="font-size: 0.9rem; letter-spacing: 2px; color: var(--text-muted);">17 . 10 . 2026</p>
+
+      <div class="guest-ribbon">
+        <p>MEMPELAI MENGUNDANG BAPAK/IBU/SAUDARA/I:</p>
+        <h3 id="nama-tamu">Nama Tamu</h3>
+      </div>
+
+      <button id="btn-open" class="btn-gold">
+        <svg class="icon-svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        Buka Undangan
+      </button>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+
+    <!-- PEMBUKA & HERO FOTO PASANGAN -->
+    <section id="pembuka" class="section-full" style="background-image: url('assets/latar/latar-pembuka.jpg');">
+      <div class="content-relative reveal">
+        <div class="welcome-card">
+          <!-- Frame Foto Pasangan Berdua -->
+          <div class="hero-couple-frame">
+            <img src="assets/foto/foto-pasangan.jpg" alt="Iin & Sudirman">
+          </div>
+
+          <h2 class="font-script" style="font-size: 3.2rem; color: var(--gold-main); margin-bottom: 10px;">Assalamu’alaikum Wr. Wb.</h2>
+          <p class="welcome-text">
+            Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu pada pernikahan kami.
+          </p>
+
+          <div class="quote-subbox">
+            <p>"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."</p>
+            <span>— QS. Ar-Rum: 21</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMPELAI SECTION -->
+    <section id="mempelai" class="section-full" style="background-image: url('assets/latar/latar-mempelai.jpg');">
+      <div class="content-relative reveal">
+        <div class="section-title">
+          <h2 class="font-script">Mempelai</h2>
+          <p style="font-size: 0.8rem; color: var(--text-muted); letter-spacing: 1px;">Pasangan Yang Berbahagia</p>
+        </div>
+
+        <div class="couple-container-large">
+          <!-- Mempelai Wanita -->
+          <div class="couple-card-large">
+            <div class="arch-frame-large">
+              <img src="assets/foto/foto-mempelai-wanita.jpg" alt="Iin Fauziah">
+            </div>
+            <h3 class="font-serif">Iin Fauziah Amd T</h3>
+            <p>
+              Putri dari<br>
+              Bapak Cinnong<br>
+              <span style="font-family: 'Great Vibes', cursive; font-size: 1.4rem; color: var(--gold-main); display: block; margin: 2px 0;">&</span>
+              Ibu Hani
+            </p>
+          </div>
+
+          <!-- Simbol & (Di Tengah) -->
+          <div class="couple-symbol-center">&</div>
+
+          <!-- Mempelai Pria -->
+          <div class="couple-card-large">
+            <div class="arch-frame-large">
+              <img src="assets/foto/foto-mempelai-pria.jpg" alt="Sudirman">
+            </div>
+            <h3 class="font-serif">Sudirman</h3>
+            <p>
+              Putra dari<br>
+              Bapak Bussa<br>
+              <span style="font-family: 'Great Vibes', cursive; font-size: 1.4rem; color: var(--gold-main); display: block; margin: 2px 0;">&</span>
+              Ibu Jamia
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TURUT MENGUNDANG SECTION (8 BARIS) -->
+    <section id="turut-mengundang" class="section-full" style="background-image: url('assets/latar/latar-mempelai.jpg');">
+      <div class="content-relative reveal">
+        <div class="family-card">
+          <h2 class="font-script" style="font-size: 3rem; color: var(--gold-main);">Turut Mengundang</h2>
+          <p style="font-size: 0.8rem; color: var(--text-muted); letter-spacing: 1px;">Keluarga Besar Mempelai Wanita</p>
+
+          <ul class="family-list">
+            <li>Bpk. H. Ahmad & Keluarga</li>
+            <li>Bpk. Muhammad Kasim & Keluarga</li>
+            <li>Bpk. Syamsuddin & Keluarga</li>
+            <li>Bpk. Abdul Rahman & Keluarga</li>
+            <li>Ibu Hj. Aminah & Keluarga</li>
+            <li>Ibu Rosmawati & Keluarga</li>
+            <li>Ibu Salma & Keluarga</li>
+            <li>Keluarga Besar Bpk. Cinnong</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- RANGKAIAN ACARA & TIMELINE -->
+    <section id="acara" class="section-full" style="background-image: url('assets/latar/latar-acara.jpg');">
+      <div class="content-relative reveal">
+        <div class="section-title">
+          <h2 class="font-script">Agenda Acara</h2>
+          <p style="font-size: 0.8rem; color: var(--text-muted); letter-spacing: 1px;">Sabtu, 17 Oktober 2026</p>
+        </div>
+
+        <!-- Countdown Bar -->
+        <div class="countdown-bar">
+          <div class="cd-box"><span id="days">00</span><p>Hari</p></div>
+          <div class="cd-box"><span id="hours">00</span><p>Jam</p></div>
+          <div class="cd-box"><span id="minutes">00</span><p>Menit</p></div>
+          <div class="cd-box"><span id="seconds">00</span><p>Detik</p></div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline-container">
+          <div class="timeline-item">
+            <h4>Akad Nikah</h4>
+            <div class="time-tag">Pukul 08.00 - 10.00 WITA</div>
+            <p>Kediaman Mempelai Wanita</p>
+          </div>
+
+          <div class="timeline-item">
+            <h4>Resepsi Pernikahan</h4>
+            <div class="time-tag">Pukul 16.00 WITA - Selesai</div>
+            <p>Desa Singki</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 25px;">
+          <a href="https://maps.app.goo.gl/QoAajYTGCd8ajr2h8" target="_blank" rel="noopener noreferrer" class="btn-gold">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Buka Google Maps
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP SECTION -->
+    <section id="konfirmasi" class="section-full" style="background-image: url('assets/latar/latar-konfirmasi.jpg');">
+      <div class="content-relative reveal">
+        <div class="form-card">
+          <h2 class="rsvp-title">RSVP</h2>
+          <p style="font-size: 0.8rem; color: var(--text-muted); letter-spacing: 1px; text-align: center; margin-bottom: 20px;">Konfirmasi Kehadiran</p>
+
+          <form id="rsvp-form">
+            <div class="form-group">
+              <label for="rsvp-name">Nama Lengkap</label>
+              <input type="text" id="rsvp-name" placeholder="Masukkan nama Anda" required>
+            </div>
+
+            <div class="form-group">
+              <label for="rsvp-status">Status Kehadiran</label>
+              <select id="rsvp-status" required>
+                <option value="" disabled selected>Pilih Kehadiran</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+                <option value="Ragu-ragu">Masih Ragu-ragu</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="rsvp-amount">Jumlah Tamu</label>
+              <select id="rsvp-amount">
+                <option value="1">1 Orang</option>
+                <option value="2">2 Orang</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-gold" style="width: 100%; justify-content: center; margin-top: 10px;">
+              Kirim Konfirmasi
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- PENUTUP SECTION -->
+    <section id="penutup" class="section-full" style="background-image: url('assets/latar/latar-penutup.jpg');">
+      <div class="content-relative reveal" style="text-align: center;">
+        <h2 class="font-script" style="font-size: 3.5rem; color: var(--gold-main);">Terima Kasih</h2>
+        <p style="font-size: 0.85rem; line-height: 1.8; color: var(--text-muted); margin: 20px 0;">
+          Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.
+        </p>
+        <p style="font-size: 0.75rem; letter-spacing: 2px; color: var(--gold-main); margin-top: 30px;">KAMI YANG BERBAHAGIA</p>
+        <h3 class="font-script" style="font-size: 3.8rem; color: var(--gold-main); margin-top: 5px;">Iin & Sudirman</h3>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. GUEST NAME FROM URL PARAMS
+      const urlParams = new URLSearchParams(window.location.search);
+      const guestName = urlParams.get('to') || urlParams.get('n') || 'Tamu Undangan';
+      const namaTamuEl = document.getElementById('nama-tamu');
+      if (namaTamuEl) namaTamuEl.textContent = guestName;
+
+      // 2. OPEN INVITATION & MUSIC CONTROL
+      const btnOpen = document.getElementById('btn-open');
+      const mainContent = document.getElementById('main-content');
+      const floatingControls = document.querySelector('.floating-container');
+      const bgMusic = document.getElementById('bg-music');
+      const btnAudio = document.getElementById('btn-audio');
+
+      let isPlaying = false;
+
+      function toggleMusic() {
+        if (isPlaying) {
+          bgMusic.pause();
+          btnAudio.classList.remove('active');
+          isPlaying = false;
+        } else {
+          bgMusic.play().then(() => {
+            btnAudio.classList.add('active');
+            isPlaying = true;
+          }).catch(err => console.log('Audio error:', err));
+        }
+      }
+
+      btnOpen.addEventListener('click', () => {
+        document.body.classList.remove('locked');
+        mainContent.classList.add('active');
+        floatingControls.classList.add('active');
+
+        toggleMusic();
+
+        document.getElementById('pembuka').scrollIntoView({ behavior: 'smooth' });
+        setTimeout(checkReveal, 300);
+      });
+
+      btnAudio.addEventListener('click', toggleMusic);
+
+      // 3. COUNTDOWN TIMER
+      const targetDate = new Date('October 17, 2026 08:00:00').getTime();
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const difference = targetDate - now;
+
+        if (difference > 0) {
+          const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+          document.getElementById('days').textContent = String(days).padStart(2, '0');
+          document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+          document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+          document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        }
+      }
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+
+      // 4. SCROLL REVEAL ANIMATION
+      const reveals = document.querySelectorAll('.reveal');
+
+      function checkReveal() {
+        const windowHeight = window.innerHeight;
+        reveals.forEach(reveal => {
+          const elementTop = reveal.getBoundingClientRect().top;
+          if (elementTop < windowHeight - 50) {
+            reveal.classList.add('active');
+          }
+        });
+      }
+      window.addEventListener('scroll', checkReveal);
+
+      // 5. AUTO-SCROLL CONTROL
+      const btnAutoScroll = document.getElementById('btn-autoscroll');
+      const autoScrollIcon = document.getElementById('autoscroll-icon');
+      const sections = document.querySelectorAll('main section');
+
+      let isAutoScrolling = false;
+      let autoScrollInterval = null;
+      let currentSectionIndex = 0;
+
+      function scrollToNextSection() {
+        currentSectionIndex++;
+        if (currentSectionIndex >= sections.length) {
+          currentSectionIndex = 0;
+        }
+        sections[currentSectionIndex].scrollIntoView({ behavior: 'smooth' });
+      }
+
+      function startAutoScroll() {
+        if (isAutoScrolling) return;
+        isAutoScrolling = true;
+        btnAutoScroll.classList.add('active');
+        autoScrollIcon.innerHTML = '<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>';
+        autoScrollInterval = setInterval(scrollToNextSection, 5500);
+      }
+
+      function stopAutoScroll() {
+        if (!isAutoScrolling) return;
+        isAutoScrolling = false;
+        btnAutoScroll.classList.remove('active');
+        autoScrollIcon.innerHTML = '<path d="M8 5v14l11-7z"/>';
+        clearInterval(autoScrollInterval);
+      }
+
+      btnAutoScroll.addEventListener('click', () => {
+        if (isAutoScrolling) stopAutoScroll();
+        else startAutoScroll();
+      });
+
+      ['touchstart', 'wheel', 'pointerdown'].forEach(evt => {
+        window.addEventListener(evt, (e) => {
+          if (e.target.closest('#btn-autoscroll')) return;
+          stopAutoScroll();
+        }, { passive: true });
+      });
+
+      // 6. RSVP FORM HANDLER
+      const rsvpForm = document.getElementById('rsvp-form');
+      if (rsvpForm) {
+        rsvpForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = document.getElementById('rsvp-name').value;
+          const status = document.getElementById('rsvp-status').value;
+          alert(`Terima kasih ${name}, konfirmasi kehadiran (${status}) berhasil terkirim!`);
+          rsvpForm.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>

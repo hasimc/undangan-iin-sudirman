@@ -1,0 +1,13 @@
+PENGGANTIAN FOTO
+
+1. assets/foto/foto-cover.jpg = foto utama sampul/latar
+2. assets/foto/foto-pasangan.jpg = foto pasangan
+3. assets/foto/foto-mempelai-wanita.jpg = foto mempelai wanita (opsional)
+4. assets/foto/foto-mempelai-pria.jpg = foto mempelai pria (opsional)
+
+Gunakan nama file yang sama agar tidak perlu mengubah kode.
+
+MUSIK
+Masukkan file MP3 bernama wedding.mp3 ke assets/musik/.
+
+Tidak ada galeri foto pada versi ini.
