@@ -1,0 +1,15 @@
+PETUNJUK PENGGANTIAN LATAR
+
+Ganti file dengan nama yang sama untuk mengubah latar setiap bagian.
+
+1. latar-cover.jpg      = sampul pembuka
+2. latar-hero.jpg       = halaman utama
+3. latar-pembuka.jpg    = halaman sapaan tamu
+4. latar-mempelai.jpg   = halaman mempelai
+5. latar-acara.jpg      = halaman waktu dan tempat
+6. latar-countdown.jpg  = halaman hitung mundur
+7. latar-kutipan.jpg    = halaman kutipan/doa
+8. latar-konfirmasi.jpg = halaman konfirmasi kehadiran
+9. latar-penutup.jpg    = halaman penutup
+
+Gunakan JPG/JPEG. Saran sisi terpanjang 1800-2500 piksel. Nama file harus tetap sama.
